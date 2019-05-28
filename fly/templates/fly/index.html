@@ -1,0 +1,18 @@
+{% extends "fly/base.html" %}
+
+{% block title %}
+    Flys
+{% endblock %}
+
+{% block body %}
+    <h1>Flys<h1>
+    <ul>
+        {% for fly in flys %}
+            <!-- got with 'fly', fly.id -->
+            <!-- got with 'list', list.id -->
+            <li>
+                <a href="{% url 'fly' fly.id %}">{{ fly }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
