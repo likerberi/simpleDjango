@@ -6,8 +6,11 @@
 {% block body %}
     <h1> Fly {{ fly.id }} </h1>
     <ul>
+        <li>Fly Number: {{ fly.id }}</li>
         <li>Origin: {{ fly.origin }}</li>
         <li>Destination: {{ fly.destination }}</li>
+        <li>Duration: {{ fly.duration }}</li>
+        <li>Valid: {{ fly.is_valid_fly}}</li>
     </ul>
     <h2>Passengers</h2>
     <ul>
